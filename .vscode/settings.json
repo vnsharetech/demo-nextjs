@@ -1,0 +1,14 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/cb6c0b00-13ba-46ae-a188-cfa500a239fe/resourceGroups/Dev/providers/Microsoft.Web/sites/BrandTruthDevFrontend",
+  "appService.deploySubpath": ".",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

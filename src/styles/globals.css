@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Source Serif Pro for Headers for Tiempos */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+.pulse-test {
+  box-shadow: 0 0 0 rgba(26, 15, 142, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(26, 15, 142, 0.3);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(26, 15, 142, 0.3);
+    box-shadow: 0 0 0 0 rgba(26, 15, 142, 0.3);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.cool-transition {
+  transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Regular';
+  src: url('../assets/fonts/TiemposHeadline-Regular.otf') format('otf');
+}
+@font-face {
+  font-family: 'TiemposHeadline-Regular';
+  src: url('../assets/fonts/TiemposHeadline-RegularItalic.otf') format('otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Light';
+  src: url('../assets/fonts/TiemposHeadline-Light.otf') format('otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-LightItalic';
+  src: url('../assets/fonts/TiemposHeadline-LightItalic.otf') format('otf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Medium';
+  src: url('../assets/fonts/TiemposHeadline-Medium.otf') format('otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-MediumItalic';
+  src: url('../assets/fonts/TiemposHeadline-MediumItalic.otf') format('otf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Semibold';
+  src: url('../assets/fonts/TiemposHeadline-Semibold.otf') format('otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-SemiboldItalic';
+  src: url('../assets/fonts/TiemposHeadline-SemiboldItalic.otf') format('otf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Bold';
+  src: url('../assets/fonts/TiemposHeadline-Bold.otf') format('otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-BoldItalic';
+  src: url('../assets/fonts/TiemposHeadline-BoldItalic.otf') format('otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-Black';
+  src: url('../assets/fonts/TiemposHeadline-Black.otf') format('otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline-BlackItalic';
+  src: url('../assets/fonts/TiemposHeadline-BlackItalic.otf') format('otf');
+  font-weight: 900;
+  font-style: italic;
+}
+
+.input-field::placeholder {
+  color: #00253e;
+  opacity: 0.5;
+}
+
+.signup-bg-img {
+  background-image: url('/img/create-bg.svg');
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #d8dbe1;
+}
+
+/* Toggle B */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #d8dbe1;
+}
